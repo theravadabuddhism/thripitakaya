@@ -1,0 +1,2 @@
+# Thripitaka
+Buddha Jayanthi Tripiṭaka
