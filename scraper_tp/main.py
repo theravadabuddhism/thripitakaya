@@ -58,12 +58,8 @@ def extract(id, browser):
 
 def start():
     browser = get_chrome()
-    # extract(45, browser)
-    # extract(46, browser)
-    # extract(47, browser)
-    # extract(48, browser)
-    extract(49, browser)
-    extract(50, browser)
+    for i in range(45, 58):
+        extract(i, browser)
     browser.close()
 
 

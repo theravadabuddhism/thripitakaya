@@ -1,0 +1,2 @@
+class LatexGenError(Exception):
+    pass
