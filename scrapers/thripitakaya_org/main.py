@@ -1,4 +1,7 @@
+#!/usr/bin/env python3
+
 import re
+import pathlib
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -31,7 +34,8 @@ def extract(id, browser):
         nikaya = levels[1].text.strip()
         wagga = levels[2].text.strip()
     sutta = levels[-1].text.strip()
-    with open(f'books/{sutta}.txt', 'w') as file:
+    pathlib.Path("output").mkdir(parents=True, exist_ok=True)
+    with open(f'output/{sutta}.txt', 'w') as file:
         if len(levels) == 5:
             file.write(f"{book}\n")
             file.write(f"{nikaya}\n")

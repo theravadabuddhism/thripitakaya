@@ -2,3 +2,4 @@
 webdriver/*
 !webdriver/download.sh
 *.log
+output/
