@@ -1,0 +1,4 @@
+.idea/*
+webdriver/*
+!webdriver/download.sh
+*.log
